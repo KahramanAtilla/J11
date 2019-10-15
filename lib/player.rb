@@ -33,6 +33,9 @@ class Player
   def attacks(pl2)
     defense = pl2.name
     puts "#{name} attacks #{defense}"
-    pl2.gets_damage(compute_damage.to_i)
+    dmg = compute_damage.to_i
+    puts "#{dmg} inflige"
+    pl2.gets_damage(dmg)
+    
   end
 end
